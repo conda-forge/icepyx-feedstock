@@ -1,5 +1,5 @@
 {% set name = "icepyx" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepyx-{{ version }}.tar.gz
-  sha256: 6a3ed302c4bdf10502c8e165549ae58d32c247c6bce066a23fa9547c1337ba13
-  
+  sha256: 4c7ff229100e31359a30c6bda51e06fa6ffa6a12730b545cdfcf8bd8334de4dd
+
 build:
   number: 0
   noarch: python
-  script: 
+  script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}    # [unix]
     - set SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}    # [win]
     - {{ PYTHON }} -m pip install . --no-deps -vv
