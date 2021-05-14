@@ -1,5 +1,5 @@
 {% set name = "icepyx" %}
-{% set version = "0.3.4" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepyx-{{ version }}.tar.gz
-  sha256: 4c7ff229100e31359a30c6bda51e06fa6ffa6a12730b545cdfcf8bd8334de4dd
+  sha256: 4c6757172f2115ee3fe2a1952d9f6b487f8d6f00a7685236637074c021b373b7
 
 build:
   number: 0
@@ -26,14 +26,23 @@ requirements:
     - setuptools_scm >=3.4
     - toml
   run:
+    - backoff
+    - dask
+    - datashader
     - fiona
     - geopandas
+    - geoviews
     - h5py
+    - holoviews
+    - hvplot
+    - intake
     - matplotlib-base
     - numpy
+    - pandas
     - python >=3.0
     - requests
     - shapely
+    - tqdm
     - xarray
 
 test:
