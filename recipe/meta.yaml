@@ -34,6 +34,8 @@ requirements:
     - geoviews
     - h5py
     - holoviews
+    - hvplot
+    - intake
     - matplotlib-base
     - numpy
     - pandas
