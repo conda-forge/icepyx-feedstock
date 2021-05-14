@@ -26,14 +26,20 @@ requirements:
     - setuptools_scm >=3.4
     - toml
   run:
+    - backoff
+    - dask
+    - datashader
     - fiona
     - geopandas
     - h5py
+    - holoviews
     - matplotlib-base
     - numpy
+    - pandas
     - python >=3.0
     - requests
     - shapely
+    - tqdm
     - xarray
 
 test:
