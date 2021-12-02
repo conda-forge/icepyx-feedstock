@@ -1,5 +1,5 @@
 {% set name = "icepyx" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepyx-{{ version }}.tar.gz
-  sha256: 4c6757172f2115ee3fe2a1952d9f6b487f8d6f00a7685236637074c021b373b7
+  sha256: fe916a433746711cd67d84e1f26ed4bbf903808a1d5645cf1157835d27f7bca2
 
 build:
   number: 0
