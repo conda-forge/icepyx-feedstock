@@ -36,6 +36,7 @@ requirements:
     - holoviews
     - hvplot
     - intake
+    - intake-xarray
     - matplotlib-base
     - numpy
     - pandas
