@@ -1,5 +1,5 @@
 {% set name = "icepyx" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepyx-{{ version }}.tar.gz
-  sha256: fe916a433746711cd67d84e1f26ed4bbf903808a1d5645cf1157835d27f7bca2
+  sha256: b63ba2041377338e692669d57b8b4aa6659fe15fff482e8006022887d6c4a703
 
 build:
   number: 0
@@ -32,10 +32,12 @@ requirements:
     - fiona
     - geopandas
     - geoviews
+    - h5netcdf
     - h5py
     - holoviews
     - hvplot
     - intake
+    - intake-xarray
     - matplotlib-base
     - numpy
     - pandas
