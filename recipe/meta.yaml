@@ -32,6 +32,7 @@ requirements:
     - fiona
     - geopandas
     - geoviews
+    - h5netcdf
     - h5py
     - holoviews
     - hvplot
