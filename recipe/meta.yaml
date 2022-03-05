@@ -11,7 +11,7 @@ source:
   sha256: 1b10f8ac8375b4bf82a9561bd21a635c2a50f3ca101b9ab3ddf9996f560b8fc4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}    # [unix]
