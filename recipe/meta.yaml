@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.0
+    - python >=3.0,<3.10
     - setuptools >=45
     - setuptools_scm >=3.4
     - toml
@@ -41,7 +41,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.0
+    - python >=3.0,<3.10
     - requests
     - shapely
     - tqdm
