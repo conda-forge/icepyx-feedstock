@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepyx-{{ version }}.tar.gz
-  sha256: f0ecc8136f306e0e11f795fa5e26a7211f6f5682d88d14686fa41dc80efaf5a2
+  sha256: 1b10f8ac8375b4bf82a9561bd21a635c2a50f3ca101b9ab3ddf9996f560b8fc4
 
 build:
   number: 0
