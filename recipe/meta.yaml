@@ -11,7 +11,7 @@ source:
   sha256: 365296ec9cc8800fe7ecb43780dd268cf001e4a8b91ef7d3d6a03aaf4c09b3a2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}    # [unix]
@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.0,<3.10
+    - python >=3.0,<3.11
     - setuptools >=45
     - setuptools_scm >=3.4
     - toml
@@ -41,7 +41,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.0,<3.10
+    - python >=3.0,<3.11
     - requests
     - shapely
     - tqdm
