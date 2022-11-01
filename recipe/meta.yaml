@@ -1,5 +1,5 @@
 {% set name = "icepyx" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepyx-{{ version }}.tar.gz
-  sha256: 365296ec9cc8800fe7ecb43780dd268cf001e4a8b91ef7d3d6a03aaf4c09b3a2
+  sha256: dad4579c7357469b31fd2f18f9c86f40b89d3860ad8c9e6218cf33cde3d1b978
 
 build:
   number: 0
@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.0,<3.10
+    - python >=3.0
     - setuptools >=45
     - setuptools_scm >=3.4
     - toml
@@ -41,7 +41,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.0,<3.10
+    - python >=3.0
     - requests
     - shapely
     - tqdm
