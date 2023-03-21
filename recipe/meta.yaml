@@ -29,6 +29,7 @@ requirements:
     - backoff
     - dask
     - datashader
+    - earthaccess>=0.5.1
     - fiona
     - geopandas
     - geoviews
