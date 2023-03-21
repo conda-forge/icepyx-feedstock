@@ -1,11 +1,11 @@
-About icepyx
-============
+About icepyx-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/icepyx-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/icesat2py/icepyx.git
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/icepyx-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python tools for obtaining and working with ICESat-2 data
 
