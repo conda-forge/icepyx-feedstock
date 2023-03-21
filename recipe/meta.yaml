@@ -1,5 +1,5 @@
 {% set name = "icepyx" %}
-{% set version = "0.6.4" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepyx-{{ version }}.tar.gz
-  sha256: dad4579c7357469b31fd2f18f9c86f40b89d3860ad8c9e6218cf33cde3d1b978
+  sha256: 9558549544598708c0196e7e33bf02a86b311c5516e777625d01faab741132b5
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
     - backoff
     - dask
     - datashader
+    - earthaccess >=0.5.1
     - fiona
     - geopandas
     - geoviews
