@@ -27,25 +27,20 @@ requirements:
     - toml
   run:
     - backoff
-    - dask
     - datashader
     - earthaccess >=0.5.1
     - fiona
     - geopandas
-    - geoviews
     - h5netcdf
     - h5py
     - holoviews
     - hvplot
-    - intake
-    - intake-xarray
     - matplotlib-base
     - numpy
-    - pandas
     - python >=3.0
     - requests
+    - s3fs
     - shapely
-    - tqdm
     - xarray
 
 test:
