@@ -37,6 +37,7 @@ requirements:
     - hvplot
     - matplotlib-base
     - numpy
+    - pandas
     - python >=3.0
     - requests
     - s3fs
