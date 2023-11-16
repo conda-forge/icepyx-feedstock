@@ -55,7 +55,9 @@ test:
     - pip
 
 about:
-  home: https://github.com/icesat2py/icepyx.git
+  home: https://github.com/icesat2py/icepyx
+  doc_url: https://icepyx.readthedocs.io
+  dev_url: https://github.com/icesat2py/icepyx
   summary: Python tools for obtaining and working with ICESat-2 data
   license: BSD-3-Clause
   license_file: LICENSE
