@@ -27,6 +27,8 @@ requirements:
     - toml
   run:
     - backoff
+    - dask-core
+    - dask-expr
     - datashader
     - earthaccess >=0.5.1
     - fiona
