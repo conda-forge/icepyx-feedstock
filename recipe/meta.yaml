@@ -50,6 +50,7 @@ test:
   imports:
     - icepyx
     - icepyx.core
+    - icepyx.quest
   commands:
     - pip check
     - python -c "import icepyx; assert icepyx.__version__ != '0.0.0'"
