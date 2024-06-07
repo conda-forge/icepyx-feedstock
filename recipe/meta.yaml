@@ -1,5 +1,5 @@
 {% set name = "icepyx" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepyx-{{ version }}.tar.gz
-  sha256: 0d1a1bcba0443a1680d4dc269b90d83f93208bbef7b3f004465f204b87f89d9e
+  sha256: f49d58f202b3141af9552efbbc5670dc93e55e0afbb1a851a376640cd398c3a5
 
 build:
   number: 0
@@ -27,6 +27,8 @@ requirements:
     - toml
   run:
     - backoff
+    - dask-core
+    - dask-expr
     - datashader
     - earthaccess >=0.5.1
     - fiona
@@ -48,6 +50,7 @@ test:
   imports:
     - icepyx
     - icepyx.core
+    - icepyx.quest
   commands:
     - pip check
     - python -c "import icepyx; assert icepyx.__version__ != '0.0.0'"
