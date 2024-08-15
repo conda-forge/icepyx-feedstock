@@ -21,10 +21,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.0
-    - setuptools >=45
-    - setuptools_scm >=3.4
-    - toml
+    - python >=3.7
+    - setuptools >=66
+    - setuptools_scm
+    - wheel
   run:
     - backoff
     - dask-core
@@ -40,7 +40,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.0
+    - python >=3.7
     - requests
     - s3fs
     - shapely
