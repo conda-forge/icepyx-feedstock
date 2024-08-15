@@ -149,5 +149,6 @@ Feedstock Maintainers
 
 * [@JessicaS11](https://github.com/JessicaS11/)
 * [@lsetiawan](https://github.com/lsetiawan/)
+* [@mfisher87](https://github.com/mfisher87/)
 * [@weiji14](https://github.com/weiji14/)
 
