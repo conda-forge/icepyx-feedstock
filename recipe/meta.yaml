@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
     - setuptools >=66
     - setuptools_scm
     - wheel
@@ -40,7 +40,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.7
+    - python >=3.9
     - requests
     - s3fs
     - shapely
