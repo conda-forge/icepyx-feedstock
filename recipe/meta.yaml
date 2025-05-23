@@ -1,3 +1,4 @@
+{% set python_min = "3.11" %}
 {% set name = "icepyx" %}
 {% set version = "2.0.0" %}
 
@@ -26,17 +27,17 @@ requirements:
     - setuptools_scm
     - wheel
   run:
-    - deprecated
-    - harmony-py >=1.0.0
     - backoff
     - dask-core <2025.1.0
     - dask-expr
     - datashader
+    - deprecated
     - earthaccess >=0.12.0
     - fiona
     - geopandas
     - h5netcdf
     - h5py
+    - harmony-py >=1.0.0    
     - holoviews
     - hvplot
     - matplotlib-base
