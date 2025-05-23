@@ -11,7 +11,7 @@ Summary: Python tools for obtaining and working with ICESat-2 data
 
 Development: https://github.com/icesat2py/icepyx
 
-Documentation: https://icepyx.readthedocs.io
+Documentation: https://icepyx.readthedocs.io/
 
 Current build status
 ====================
