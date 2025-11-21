@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: icepyx
-  version: 2.0.0
+  version: 2.0.1
   python_min: 3.11
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/icepyx-${{ version }}.tar.gz
-  sha256: a2992d1991ae9e4896ea18e5eb19da82a21b753b02b4be66b4a37130077286b9
+  sha256: a29ff754d8526df6b917ef7b7c28635662187e9c994e43aadf3fe788c937cb52
 
 build:
   number: 0
@@ -33,10 +33,9 @@ requirements:
   run:
     - backoff
     - dask-core <2025.1.0
-    - dask-expr
     - datashader
     - deprecated
-    - earthaccess >=0.12.0
+    - earthaccess >=0.15.1
     - fiona
     - geopandas
     - h5netcdf
@@ -46,13 +45,11 @@ requirements:
     - hvplot
     - matplotlib-base
     - numpy
-    - pandas
     - python >=${{ python_min }}
     - requests
     - s3fs
     - shapely
     - xarray
-
 tests:
   - python:
       imports:
@@ -65,7 +62,7 @@ tests:
         - pip
         - python ${{ python_min }}
     script:
-      - 'python -c "import icepyx; assert icepyx.__version__ != ''0.0.0''"'
+      - python -c "import icepyx; assert icepyx.__version__ != '0.0.0'"
 
 about:
   summary: Python tools for obtaining and working with ICESat-2 data
