@@ -41,7 +41,7 @@ requirements:
     - h5netcdf
     - h5py
     - harmony-py >=1.0.0
-    - holoviews
+    - holoviews >=1.13.0 # https://github.com/conda-forge/holoviews-feedstock/issues/120
     - hvplot
     - matplotlib-base
     - numpy
