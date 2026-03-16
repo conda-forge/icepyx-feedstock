@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: icepyx
-  version: 2.0.1
+  version: 2.0.2
   python_min: 3.11
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/icepyx-${{ version }}.tar.gz
-  sha256: a29ff754d8526df6b917ef7b7c28635662187e9c994e43aadf3fe788c937cb52
+  sha256: 92f848463cb0a1f0b3ac6090b9868a8d24e9efbd46f7694de2c159368eb12df6
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - wheel
   run:
     - backoff
-    - dask-core <2025.1.0
+    - dask-core
     - datashader
     - deprecated
     - earthaccess >=0.15.1
