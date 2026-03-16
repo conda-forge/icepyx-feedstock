@@ -52,17 +52,22 @@ requirements:
     - xarray
 tests:
   - python:
-      imports:
-        - icepyx
-        - icepyx.core
-        - icepyx.quest
+      # imports:
+      #   - icepyx
+      #   - icepyx.core
+      #   - icepyx.quest
       pip_check: true
       python_version: ${{ python_min }}.*
   - requirements:
       run:
+        - dask <2026.1.2 # remove after ok with pyarrow as a required dep - github.com/dask/dask/pull/12258
         - pip
         - python ${{ python_min }}.*
     script:
+      # Manual import checks to have dask<2026.1.2 constraint to avoid pyarrow dep
+      - python -c "import icepyx"
+      - python -c "import icepyx.core"
+      - python -c "import icepyx.quest"
       - python -c "import icepyx; assert icepyx.__version__ != '0.0.0'"
 
 about:
