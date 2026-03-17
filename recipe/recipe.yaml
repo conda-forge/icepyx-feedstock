@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: icepyx
-  version: 2.0.1
-  python_min: 3.11
+  version: 2.0.2
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/icepyx-${{ version }}.tar.gz
-  sha256: a29ff754d8526df6b917ef7b7c28635662187e9c994e43aadf3fe788c937cb52
+  sha256: 92f848463cb0a1f0b3ac6090b9868a8d24e9efbd46f7694de2c159368eb12df6
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - wheel
   run:
     - backoff
-    - dask-core <2025.1.0
+    - dask-core
     - datashader
     - deprecated
     - earthaccess >=0.15.1
@@ -41,7 +41,7 @@ requirements:
     - h5netcdf
     - h5py
     - harmony-py >=1.0.0
-    - holoviews
+    - holoviews >=1.13.0 # https://github.com/conda-forge/holoviews-feedstock/issues/120
     - hvplot
     - matplotlib-base
     - numpy
@@ -52,16 +52,22 @@ requirements:
     - xarray
 tests:
   - python:
-      imports:
-        - icepyx
-        - icepyx.core
-        - icepyx.quest
+      # imports:
+      #   - icepyx
+      #   - icepyx.core
+      #   - icepyx.quest
       pip_check: true
+      python_version: ${{ python_min }}.*
   - requirements:
       run:
+        - dask <2026.1.2 # remove after ok with pyarrow as a required dep - github.com/dask/dask/pull/12258
         - pip
         - python ${{ python_min }}.*
     script:
+      # Manual import checks to have dask<2026.1.2 constraint to avoid pyarrow dep
+      - python -c "import icepyx"
+      - python -c "import icepyx.core"
+      - python -c "import icepyx.quest"
       - python -c "import icepyx; assert icepyx.__version__ != '0.0.0'"
 
 about:
